@@ -82,6 +82,7 @@ public class MyString {
      */
     public static String spacedString(String str) {
         String spacedStr = "";
+        if (str.isEmpty()) return "";  
 
         for (int i = 0; i < str.length() - 1; i ++){
             spacedStr += str.charAt(i);
